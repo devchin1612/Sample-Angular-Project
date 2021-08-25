@@ -1,1 +1,87 @@
-<p>feedback works!</p>
+<!-- Material form login -->
+<mdb-card>
+  <mdb-card-header class="info-color white-text text-center py-4 mt-5">
+    <h5>
+      <strong>Give us Feedback</strong>
+    </h5>
+  </mdb-card-header>
+
+  <!--Card content-->
+  <mdb-card-body class="px-lg-5 pt-0">
+    <!-- Form -->
+    <form
+      class=""
+      style="color: #757575"
+      [formGroup]="feedbackForm"
+      (ngSubmit)="onSubmit()"
+    >
+      <!-- Email -->
+      <div class="md-form">
+        <mdb-icon fas icon="envelope" class="prefix"></mdb-icon>
+        <input
+          type="email"
+          id="materialLoginFormEmail"
+          class="form-control"
+          mdbInput
+          formControlName="userEmail"
+          required
+        />
+        <label for="materialLoginFormEmail">E-mail</label>
+      </div>
+
+      <!-- Password -->
+      <div class="md-form">
+        <mdb-icon fas icon="user-alt" class="prefix"></mdb-icon>
+        <input
+          type="text"
+          id="materialLoginFormPassword"
+          class="form-control"
+          mdbInput
+          formControlName="userName"
+          required
+        />
+        <label for="materialLoginFormPassword">Name</label>
+      </div>
+
+      <!--mobile number-->
+      <div class="md-form">
+        <mdb-icon fas icon="phone-alt" class="prefix"></mdb-icon>
+        <input
+          type="tel"
+          id="materialLoginFormPassword"
+          class="form-control"
+          mdbInput
+          formControlName="userMobile"
+          required
+        />
+        <label for="materialLoginFormPassword">Mobile number</label>
+      </div>
+
+      <!--Description-->
+      <div class="md-form">
+        <mdb-icon fas icon="pencil-alt" class="prefix"></mdb-icon>
+        <textarea
+          type="text"
+          id="form8"
+          class="md-textarea form-control"
+          mdbInput
+          formControlName="userDescription"
+          required
+        ></textarea>
+        <label for="form8">Icon Prefix</label>
+      </div>
+      <!--Submit-->
+      <button
+        mdbBtn
+        color="info"
+        class="my-4 waves-effect z-depth-0"
+        mdbWavesEffect
+        type="submit"
+      >
+        Submit
+      </button>
+    </form>
+    <!-- Form -->
+  </mdb-card-body>
+</mdb-card>
+<!-- Material form login -->
