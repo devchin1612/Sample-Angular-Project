@@ -1,1 +1,197 @@
-<p>employees works!</p>
+<!--Navbar-->
+<mdb-navbar
+  SideClass="navbar navbar-expand-lg navbar-dark bg-primary"
+  [containerInside]="false"
+>
+  <!-- Navbar brand -->
+  <mdb-navbar-brand>
+    <a class="navbar-brand">
+      <img src="../assets/logo.png" height="30" alt="" />
+    </a>
+  </mdb-navbar-brand>
+
+  <!-- Collapsible content -->
+  <links>
+    <!-- Links -->
+    <ul class="navbar-nav ml-5" style="margin-right: 700px">
+      <li class="nav-item">
+        <a class="nav-link waves-light" routerLink="/employees" mdbWavesEffect
+          >Employees<span class="sr-only"></span
+        ></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" routerLink="/sports" mdbWavesEffect
+          >Sports</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" routerLink="/aboutus" mdbWavesEffect
+          >About US</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" routerLink="/feedback" mdbWavesEffect
+          >Feedback</a
+        >
+      </li>
+    </ul>
+    <!-- Links -->
+    <form class="form-inline waves-light ml-5" mdbWavesEffect>
+      <div class="md-form my-0">
+        <form class="d-flex">
+          <a href="" routerLink="/employee_details">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              (click)="basicModal.show()"
+            >
+              <i class="fas fa-plus"></i>
+              Add Employee
+            </button>
+          </a>
+        </form>
+      </div>
+    </form>
+  </links>
+  <!-- Collapsible content -->
+</mdb-navbar>
+<!--/.Navbar-->
+<!--modals-->
+<div
+  mdbModal
+  #basicModal="mdbModal"
+  class="modal fade"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="myBasicModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button
+          type="button"
+          class="close pull-right"
+          aria-label="Close"
+          (click)="basicModal.hide()"
+        >
+          <span aria-hidden="true">×</span>
+        </button>
+        <h4 class="modal-title w-100" id="myModalLabel">Add Employee</h4>
+      </div>
+      <div class="modal-body">
+        <form
+          class="
+            container
+            form
+            p-4 p-3 p-2
+            text-dark
+            bg-opacity-25
+            mb-5
+            rounded
+          "
+        >
+          <div id="form">
+            <div class="mb-3">
+              <span class="text-primary"
+                ><mdb-icon fas icon="user-alt"></mdb-icon
+              ></span>
+              <label for="exampleInputEmail1" class="form-label ml-2"
+                ><strong>First Name</strong></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                aria-describedby="emailHelp"
+                placeholder="Enter Employee's First Name"
+                ng-modal="id"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <span class="text-primary"><i class="fas fa-user"></i></span>
+              <label for="exampleInputPassword1" class="form-label ml-2"
+                ><strong>Last Name</strong></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Enter Employee's Last Name"
+              />
+            </div>
+            <div class="mb-3">
+              <span class="text-primary"
+                ><mdb-icon fas icon="envelope"></mdb-icon
+              ></span>
+              <label for="exampleInputPassword1" class="form-label ml-2"
+                ><strong>Email</strong></label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Enter Employee's Mail id"
+              />
+            </div>
+            <div class="mb-3">
+              <span class="text-primary"
+                ><mdb-icon fas icon="phone-alt"></mdb-icon
+              ></span>
+              <label for="exampleInputPassword1" class="form-label ml-2"
+                ><strong>Mobile Number</strong></label
+              >
+              <input
+                type="tel"
+                class="form-control"
+                id="tel"
+                placeholder="Enter Employee's Mobile Number"
+              />
+            </div>
+            <div class="mb-3">
+              <span class="text-primary"
+                ><mdb-icon fas icon="calendar-alt"></mdb-icon
+              ></span>
+              <label for="exampleInputPassword1" class="form-label ml-2"
+                ><strong>DOB</strong></label
+              >
+              <input
+                type="date"
+                class="form-control"
+                id="date"
+                placeholder="Enter Employee's DOB"
+              />
+            </div>
+
+            <br />
+            <br />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              mdbBtn
+              color="secondary"
+              class="waves-light"
+              aria-label="Close"
+              mdbWavesEffect
+            >
+              Close
+            </button>
+            <button
+              type="submit"
+              mdbBtn
+              color="primary"
+              class="relative waves-light"
+              mdbWavesEffect
+            >
+              Save changes
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

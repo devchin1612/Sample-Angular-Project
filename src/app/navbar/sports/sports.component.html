@@ -1,1 +1,174 @@
-<p>sports works!</p>
+<!--Navbar-->
+<mdb-navbar
+  SideClass="navbar navbar-expand-lg navbar-dark bg-primary"
+  [containerInside]="false"
+>
+  <!-- Navbar brand -->
+  <mdb-navbar-brand>
+    <a class="navbar-brand">
+      <img src="../assets/logo.png" height="30" alt="" />
+    </a>
+  </mdb-navbar-brand>
+
+  <!-- Collapsible content -->
+  <links>
+    <!-- Links -->
+    <ul class="navbar-nav ml-5">
+      <li class="nav-item">
+        <a class="nav-link waves-light" routerLink="/employees" mdbWavesEffect
+          >Employees<span class="sr-only"></span
+        ></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" routerLink="/sports" mdbWavesEffect
+          >Sports</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" routerLink="/aboutus" mdbWavesEffect
+          >About US</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link waves-light"
+          style="margin-right: 600px"
+          routerLink="/feedback"
+          mdbWavesEffect
+          >Feedback</a
+        >
+      </li>
+    </ul>
+    <!-- Links -->
+    <form class="form-inline waves-light ml-5" mdbWavesEffect>
+      <div class="md-form my-0">
+        <form class="d-flex">
+          <a href="" routerLink="/allsports">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <mdb-icon fas icon="volleyball-ball"></mdb-icon>
+              Show all Sports
+            </button>
+          </a>
+        </form>
+      </div>
+    </form>
+  </links>
+  <!-- Collapsible content -->
+</mdb-navbar>
+<!--/.Navbar-->
+
+<!--Section: Products v.4-->
+<section class="pb-3 text-center">
+  <!--Section heading-->
+  <h2 class="h1 py-5">Sports</h2>
+
+  <!--Grid row-->
+  <div class="row">
+    <!--Grid column-->
+    <div class="col-lg-3 col-md-6 mb-4">
+      <!--Collection card-->
+      <mdb-card class="collection-card z-depth-1-half">
+        <!--Card image-->
+        <div class="view zoom waves-light" mdbWavesEffect>
+          <mdb-card-img
+            src="https://im.rediff.com/cricket/2013/oct/19cric7.jpg"
+            alt=""
+          ></mdb-card-img>
+          <div class="stripe dark">
+            <a>
+              <p>
+                Cricket
+                <mdb-icon fas icon="angle-right"></mdb-icon>
+              </p>
+            </a>
+          </div>
+        </div>
+        <!--Card image-->
+      </mdb-card>
+      <!--Collection card-->
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-lg-3 col-md-6 mb-4">
+      <!--Collection card-->
+      <mdb-card class="collection-card z-depth-1-half">
+        <!--Card image-->
+        <div class="view zoom waves-light" mdbWavesEffect>
+          <mdb-card-img
+            src="https://thumbs.dreamstime.com/b/badminton-action-shuttlecock-fast-racket-motion-sport-167143422.jpg"
+            alt=""
+          ></mdb-card-img>
+          <div class="stripe light">
+            <a>
+              <p>
+                Badminton
+                <mdb-icon fas icon="angle-right"></mdb-icon>
+              </p>
+            </a>
+          </div>
+        </div>
+        <!--Card image-->
+      </mdb-card>
+      <!--Collection card-->
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-lg-3 col-md-6 mb-4">
+      <!--Collection card-->
+      <mdb-card class="collection-card z-depth-1-half">
+        <!--Card image-->
+        <div class="view zoom waves-light" mdbWavesEffect>
+          <mdb-card-img
+            src="https://wallpaperaccess.com/full/1802564.jpg"
+            alt=""
+          ></mdb-card-img>
+          <div class="stripe dark">
+            <a>
+              <p>
+                Volleyball
+                <mdb-icon fas icon="angle-right"></mdb-icon>
+              </p>
+            </a>
+          </div>
+        </div>
+        <!--Card image-->
+      </mdb-card>
+      <!--Collection card-->
+    </div>
+    <!--Grid column-->
+
+    <!--Fourth column-->
+    <div class="col-lg-3 col-md-6 mb-4">
+      <!--Collection card-->
+      <mdb-card class="collection-card z-depth-1-half">
+        <!--Card image-->
+        <div class="view zoom waves-light" mdbWavesEffect>
+          <mdb-card-img
+            src="https://thumbs.dreamstime.com/b/carrom-19448852.jpg"
+            alt=""
+          ></mdb-card-img>
+          <div class="stripe light">
+            <a>
+              <p>
+                Carrom
+                <mdb-icon fas icon="angle-right"></mdb-icon>
+              </p>
+            </a>
+          </div>
+        </div>
+        <!--Card image-->
+      </mdb-card>
+      <!--Collection card-->
+    </div>
+    <!--Fourth column-->
+  </div>
+  <!--Grid row-->
+</section>
+<!--Section: Products v.4-->

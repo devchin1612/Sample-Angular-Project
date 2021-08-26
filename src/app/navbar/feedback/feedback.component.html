@@ -1,3 +1,45 @@
+<!--Navbar-->
+<mdb-navbar
+  SideClass="navbar navbar-expand-lg navbar-dark bg-primary"
+  [containerInside]="false"
+>
+  <!-- Navbar brand -->
+  <mdb-navbar-brand>
+    <a class="navbar-brand">
+      <img src="../assets/logo.png" height="30" alt="" />
+    </a>
+  </mdb-navbar-brand>
+
+  <!-- Collapsible content -->
+  <links>
+    <!-- Links -->
+    <ul class="navbar-nav ml-5">
+      <li class="nav-item">
+        <a class="nav-link waves-light" routerLink="/employees" mdbWavesEffect
+          >Employees<span class="sr-only"></span
+        ></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" routerLink="/sports" mdbWavesEffect
+          >Sports</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" routerLink="/aboutus" mdbWavesEffect
+          >About US</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" routerLink="/feedback" mdbWavesEffect
+          >Feedback</a
+        >
+      </li>
+    </ul>
+    <!-- Links -->
+  </links>
+  <!-- Collapsible content -->
+</mdb-navbar>
+<!--/.Navbar-->
 <!-- Material form login -->
 <mdb-card>
   <mdb-card-header class="info-color white-text text-center py-4 mt-5">
@@ -14,6 +56,7 @@
       style="color: #757575"
       [formGroup]="feedbackForm"
       (ngSubmit)="onSubmit()"
+      #userFeedbackForm="ngForm"
     >
       <!-- Email -->
       <div class="md-form">
@@ -68,7 +111,7 @@
           formControlName="userDescription"
           required
         ></textarea>
-        <label for="form8">Icon Prefix</label>
+        <label for="form8">Description</label>
       </div>
       <!--Submit-->
       <button
