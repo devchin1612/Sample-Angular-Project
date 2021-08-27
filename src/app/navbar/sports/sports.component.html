@@ -1,6 +1,6 @@
 <!--Navbar-->
 <mdb-navbar
-  SideClass="navbar navbar-expand-lg navbar-dark bg-primary"
+  SideClass="navbar navbar-expand-lg navbar-dark bg-primary sticky-top"
   [containerInside]="false"
 >
   <!-- Navbar brand -->
@@ -40,23 +40,6 @@
       </li>
     </ul>
     <!-- Links -->
-    <form class="form-inline waves-light ml-5" mdbWavesEffect>
-      <div class="md-form my-0">
-        <form class="d-flex">
-          <a href="" routerLink="/allsports">
-            <button
-              type="button"
-              class="btn btn-danger"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-            >
-              <mdb-icon fas icon="volleyball-ball"></mdb-icon>
-              Show all Sports
-            </button>
-          </a>
-        </form>
-      </div>
-    </form>
   </links>
   <!-- Collapsible content -->
 </mdb-navbar>
@@ -74,12 +57,37 @@
       <!--Collection card-->
       <mdb-card class="collection-card z-depth-1-half">
         <!--Card image-->
-        <div class="view zoom waves-light" mdbWavesEffect>
+        <div class="view zoom waves-light container-fluid" mdbWavesEffect>
           <mdb-card-img
-            src="https://im.rediff.com/cricket/2013/oct/19cric7.jpg"
+            src="https://images.unsplash.com/photo-1602211844066-d3bb556e983b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHRlbm5pc3xlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
             alt=""
           ></mdb-card-img>
           <div class="stripe dark">
+            <a>
+              <p>
+                Tennis
+                <mdb-icon fas icon="angle-right"></mdb-icon>
+              </p>
+            </a>
+          </div>
+        </div>
+        <!--Card image-->
+      </mdb-card>
+      <!--Collection card-->
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-lg-3 col-md-6 mb-4">
+      <!--Collection card-->
+      <mdb-card class="collection-card z-depth-1-half">
+        <!--Card image-->
+        <div class="view zoom waves-light" mdbWavesEffect>
+          <mdb-card-img
+            src="https://images.unsplash.com/photo-1603722039047-bc9997bfa963?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fGNyaWNrZXQlMjBzcG9ydHxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60"
+            alt=""
+          ></mdb-card-img>
+          <div class="stripe light">
             <a>
               <p>
                 Cricket
@@ -101,32 +109,7 @@
         <!--Card image-->
         <div class="view zoom waves-light" mdbWavesEffect>
           <mdb-card-img
-            src="https://thumbs.dreamstime.com/b/badminton-action-shuttlecock-fast-racket-motion-sport-167143422.jpg"
-            alt=""
-          ></mdb-card-img>
-          <div class="stripe light">
-            <a>
-              <p>
-                Badminton
-                <mdb-icon fas icon="angle-right"></mdb-icon>
-              </p>
-            </a>
-          </div>
-        </div>
-        <!--Card image-->
-      </mdb-card>
-      <!--Collection card-->
-    </div>
-    <!--Grid column-->
-
-    <!--Grid column-->
-    <div class="col-lg-3 col-md-6 mb-4">
-      <!--Collection card-->
-      <mdb-card class="collection-card z-depth-1-half">
-        <!--Card image-->
-        <div class="view zoom waves-light" mdbWavesEffect>
-          <mdb-card-img
-            src="https://wallpaperaccess.com/full/1802564.jpg"
+            src="https://images.unsplash.com/photo-1601512986351-9b0e01780eef?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8dm9sbGV5YmFsbHxlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
             alt=""
           ></mdb-card-img>
           <div class="stripe dark">
@@ -151,13 +134,13 @@
         <!--Card image-->
         <div class="view zoom waves-light" mdbWavesEffect>
           <mdb-card-img
-            src="https://thumbs.dreamstime.com/b/carrom-19448852.jpg"
+            src="https://images.unsplash.com/photo-1600679472829-3044539ce8ed?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGZvb3RiYWxsfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
             alt=""
           ></mdb-card-img>
           <div class="stripe light">
             <a>
               <p>
-                Carrom
+                Football
                 <mdb-icon fas icon="angle-right"></mdb-icon>
               </p>
             </a>
@@ -172,3 +155,24 @@
   <!--Grid row-->
 </section>
 <!--Section: Products v.4-->
+<form
+  class="form-inline waves-light mt-5 mr-5"
+  mdbWavesEffect
+  style="justify-content: center"
+>
+  <div class="md-form my-0">
+    <form class="d-flex">
+      <a href="" routerLink="/allsports">
+        <button
+          type="button"
+          class="btn btn-danger"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          <mdb-icon fas icon="volleyball-ball"></mdb-icon>
+          Show all Sports
+        </button>
+      </a>
+    </form>
+  </div>
+</form>

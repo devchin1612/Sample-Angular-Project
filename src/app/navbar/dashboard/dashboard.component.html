@@ -1,6 +1,6 @@
 <!--Navbar-->
 <mdb-navbar
-  SideClass="navbar navbar-expand-lg navbar-dark bg-primary"
+  SideClass="navbar navbar-expand-lg navbar-dark bg-primary sticky-top"
   [containerInside]="false"
 >
   <!-- Navbar brand -->
@@ -40,6 +40,84 @@
   <!-- Collapsible content -->
 </mdb-navbar>
 <!--/.Navbar-->
+<!-- Main navigation -->
+<header>
+  <!-- Full Page Intro -->
+  <div
+    class="view-main"
+    style="
+      background-image: url('https://mdbcdn.b-cdn.net/img/Photos/Others/architecture.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    "
+  >
+    <!-- Mask & flexbox options-->
+    <div
+      class="
+        mask
+        rgba-gradient
+        d-flex
+        justify-content-center
+        align-items-center
+      "
+    >
+      <!-- Content -->
+      <div class="container wow">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+
+          <div
+            class="
+              col-md-6
+              white-text
+              text-center text-md-left
+              mt-xl-5
+              mb-5
+              wow
+              fadeInLeft
+            "
+            data-wow-delay="0.3s"
+          >
+            <h1 class="h1-responsive font-weight-bold mt-sm-5">
+              Sports Analytics
+            </h1>
+            <hr class="hr-light" />
+
+            <a routerLink="/sports" mdbBtn color="white" mdbWavesEffect
+              >Sports</a
+            >
+            <a routerLink="/aboutus" mdbBtn color="white" mdbWavesEffect
+              >About Us</a
+            >
+          </div>
+
+          <!--Grid column-->
+          <!--Grid column-->
+          <div
+            class="col-md-6 col-xl-5 mt-xl-5 wow fadeInRight view-main"
+            data-wow-delay="0.3s"
+          >
+            <img
+              src="https://wallpapercave.com/wp/wp1862751.jpg"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Content -->
+    </div>
+    <!-- Mask & flexbox options-->
+  </div>
+  <!-- Full Page Intro -->
+</header>
+<!-- Main navigation -->
+<!--carousel-->
+<br />
 
 <mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'">
   <mdb-carousel-item>

@@ -1,6 +1,6 @@
 <!--Navbar-->
 <mdb-navbar
-  SideClass="navbar navbar-expand-lg navbar-dark bg-primary"
+  SideClass="navbar navbar-expand-lg navbar-dark bg-primary sticky-top"
   [containerInside]="false"
 >
   <!-- Navbar brand -->
@@ -41,7 +41,10 @@
 </mdb-navbar>
 <!--/.Navbar-->
 <!-- Material form login -->
-<mdb-card>
+<mdb-card
+  style="justify-content: center; margin-left: 400px; height: 600px"
+  class="col-5 mt-3"
+>
   <mdb-card-header class="info-color white-text text-center py-4 mt-5">
     <h5>
       <strong>Give us Feedback</strong>
@@ -49,10 +52,10 @@
   </mdb-card-header>
 
   <!--Card content-->
-  <mdb-card-body class="px-lg-5 pt-0">
+  <mdb-card-body class="px-sm-5 pt-0">
     <!-- Form -->
     <form
-      class=""
+      class="mx-auto"
       style="color: #757575"
       [formGroup]="feedbackForm"
       (ngSubmit)="onSubmit()"

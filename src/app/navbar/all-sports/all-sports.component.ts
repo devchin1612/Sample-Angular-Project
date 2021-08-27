@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SportsComponent } from '../sports/sports.component';
 
 @Component({
   selector: 'app-all-sports',
@@ -12,4 +13,5 @@ export class AllSportsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  
 }
