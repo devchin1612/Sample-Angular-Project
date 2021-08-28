@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { SportsComponent } from '../sports/sports.component';
+import { FormGroup,FormBuilder} from '@angular/forms';
+
 
 @Component({
   selector: 'app-all-sports',
@@ -7,8 +8,15 @@ import { SportsComponent } from '../sports/sports.component';
   styleUrls: ['./all-sports.component.scss']
 })
 export class AllSportsComponent implements OnInit {
+  
 
-  constructor() { }
+
+    constructor(){
+
+    }
+
+  
+    
 
   ngOnInit(): void {
   }

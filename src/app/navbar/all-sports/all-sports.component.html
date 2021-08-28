@@ -398,29 +398,32 @@
       <!---->
       <div class="modal-body ml-5">
         <!-- Material unchecked -->
-        <mdb-checkbox>Tennis</mdb-checkbox>
-        <mdb-checkbox>Cricket</mdb-checkbox>
-        <mdb-checkbox>Volleyball</mdb-checkbox>
-        <mdb-checkbox>Football</mdb-checkbox>
-        <mdb-checkbox>Badminton</mdb-checkbox>
-        <mdb-checkbox>Hockey</mdb-checkbox>
-        <mdb-checkbox>Swimming</mdb-checkbox>
-        <mdb-checkbox>Basketball</mdb-checkbox>
-        <mdb-checkbox>Baseball</mdb-checkbox>
-        <mdb-checkbox>Table Tennis</mdb-checkbox>
-        <mdb-checkbox>Golf</mdb-checkbox>
-        <mdb-checkbox>Archery</mdb-checkbox>
-        <br />
-        <button
-          class=""
-          style="margin-left: 200px"
-          mdbBtn
-          type="button"
-          gradient="purple"
-          mdbWavesEffect
-        >
-          Save Changes
-        </button>
+        <form action="" id="sportForm">
+          <mdb-checkbox>Tennis</mdb-checkbox>
+          <mdb-checkbox>Cricket</mdb-checkbox>
+          <mdb-checkbox>Volleyball</mdb-checkbox>
+          <mdb-checkbox>Football</mdb-checkbox>
+          <mdb-checkbox>Badminton</mdb-checkbox>
+          <mdb-checkbox>Hockey</mdb-checkbox>
+          <mdb-checkbox>Swimming</mdb-checkbox>
+          <mdb-checkbox>Basketball</mdb-checkbox>
+          <mdb-checkbox>Baseball</mdb-checkbox>
+          <mdb-checkbox>Table Tennis</mdb-checkbox>
+          <mdb-checkbox>Golf</mdb-checkbox>
+          <mdb-checkbox>Archery</mdb-checkbox>
+          <br />
+          <button
+            class=""
+            style="margin-left: 200px"
+            mdbBtn
+            type="button"
+            gradient="purple"
+            mdbWavesEffect
+            (click)="basicModal.hide()"
+          >
+            Save Changes
+          </button>
+        </form>
       </div>
     </div>
   </div>

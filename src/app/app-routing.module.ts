@@ -15,7 +15,7 @@ const routes: Routes = [
   {path:'sports',component:SportsComponent},
   {path:'aboutus',component:AboutusComponent},
   {path:'feedback',component:FeedbackComponent},
-  {path:'allsports',component:AllSportsComponent}
+  {path:'allsports',component:AllSportsComponent},
 ];
 
 @NgModule({

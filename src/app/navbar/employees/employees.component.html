@@ -164,6 +164,14 @@
                 required
                 formControlName="firstName"
               />
+              <span
+                *ngIf="
+                  !userForm.get('firstName')?.valid &&
+                  userForm.get('firstName')?.touched
+                "
+                class="help-block text-danger small"
+                >required</span
+              >
             </div>
             <div class="mb-3">
               <span class="text-primary"><i class="fas fa-user"></i></span>
@@ -177,6 +185,14 @@
                 placeholder="Enter Employee's Last Name"
                 formControlName="lastName"
               />
+              <span
+                *ngIf="
+                  !userForm.get('lastName')?.valid &&
+                  userForm.get('lastName')?.touched
+                "
+                class="help-block text-danger small"
+                >required</span
+              >
             </div>
             <div class="mb-3">
               <span class="text-primary"
@@ -192,6 +208,14 @@
                 placeholder="Enter Employee's Mail id"
                 formControlName="email"
               />
+              <span
+                *ngIf="
+                  !userForm.get('email')?.valid &&
+                  userForm.get('email')?.touched
+                "
+                class="help-block text-danger small"
+                >required</span
+              >
             </div>
             <div class="mb-3">
               <span class="text-primary"
@@ -207,6 +231,14 @@
                 placeholder="Enter Employee's Mobile Number"
                 formControlName="mobileNumber"
               />
+              <span
+                *ngIf="
+                  !userForm.get('mobileNumber')?.valid &&
+                  userForm.get('mobileNumber')?.touched
+                "
+                class="help-block text-danger small"
+                >required</span
+              >
             </div>
             <div class="mb-3">
               <span class="text-primary"
@@ -222,6 +254,13 @@
                 placeholder="Enter Employee's DOB"
                 formControlName="dob"
               />
+              <span
+                *ngIf="
+                  !userForm.get('dob')?.valid && userForm.get('dob')?.touched
+                "
+                class="help-block text-danger small"
+                >required</span
+              >
             </div>
 
             <br />
@@ -235,6 +274,9 @@
               class="relative waves-light"
               mdbWavesEffect
               (click)="addEmployee()"
+              (click)="basicModal.hide()"
+              (click)="reset()"
+              [disabled]="!userForm.valid"
             >
               Save changes
             </button>
