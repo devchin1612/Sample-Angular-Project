@@ -11,7 +11,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './navbar/login/login.component';
 import { DashboardComponent } from './navbar/dashboard/dashboard.component';
 import { AllSportsComponent } from './navbar/all-sports/all-sports.component';
-
+import{TestService} from './test.service'
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +31,7 @@ import { AllSportsComponent } from './navbar/all-sports/all-sports.component';
   ],
  
 
-  providers: [],
+  providers: [TestService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
