@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup,FormBuilder} from '@angular/forms';
+import { TestService } from 'src/app/test.service';
+
+
 
 
 @Component({
@@ -8,18 +10,42 @@ import { FormGroup,FormBuilder} from '@angular/forms';
   styleUrls: ['./all-sports.component.scss']
 })
 export class AllSportsComponent implements OnInit {
+
+  selectedItemList : any[] = [];
+ checkboxDataList : any[] = [];
+  checkedIds = [];
   
-
-
-    constructor(){
-
-    }
-
+ 
+   constructor(
+     private sportsService: TestService
+   ){}
+ 
+   ngOnInit(): void {
+     this.checkboxDataList = this.sportsService.sportsList; 
+     this.selectedItems();
+    //  this.fetchCheckedIDs();
+   }
+ 
+   onChange() {
+     this.selectedItems();
+   }
+ 
+   selectedItems(){
+     this.selectedItemList=this.checkboxDataList.filter((value , index) => {
+       return value.isChecked
+     });
+   }
+ 
+  //  fetchCheckedIDs(){
+  //    this.checkedIds = [];
+  //    this.checkboxDataList.forEach((value  , index) => {
+  //      if(value.isChecked){
+  //        this.checkedIds.push(value.id);
+  //      }
+  //    })
+  //  }
+ 
   
-    
-
-  ngOnInit(): void {
-  }
-
-  
-}
+ 
+ }
+ 
